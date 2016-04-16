@@ -1,0 +1,23 @@
+{
+  "name": "e",
+  "version": "1.0.0",
+  "description": "Electron Workshop ===",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guzmonne/electron-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guzmonne/electron-workshop/issues"
+  },
+  "homepage": "https://github.com/guzmonne/electron-workshop#readme",
+  "dependencies": {
+    "electron-prebuilt": "^0.37.6"
+  }
+}
