@@ -4,6 +4,9 @@ const electron = require( "electron" );
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 
+const reload = require( "electron-reload" );
+reload( __dirname );
+
 let mainWindow = null;
 
 // This only applies to MAC

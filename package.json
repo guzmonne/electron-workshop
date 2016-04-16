@@ -19,5 +19,8 @@
   "homepage": "https://github.com/guzmonne/electron-workshop#readme",
   "dependencies": {
     "electron-prebuilt": "^0.37.6"
+  },
+  "devDependencies": {
+    "electron-reload": "^0.2.0"
   }
 }
