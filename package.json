@@ -4,8 +4,10 @@
   "description": "Electron Workshop ===",
   "main": "main.js",
   "scripts": {
+    "test": "npm run test:main && npm run test:renderer",
+    "test:main": "electron-mocha ./tests/main/*.spec.js --reporter spec --colors",
+    "test:renderer": "electron-mocha ./tests/renderer/*.spec.js --reporter spec --colors",    
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "package:osx": "electron-packager . --platform=darwin --arch=x64",
     "package:win64": "electron-packager . --platform=win32 --arch=x64",
     "package:win32": "electron-packager . --platform=win32 --arch=ia32",
