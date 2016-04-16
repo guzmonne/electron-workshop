@@ -1,4 +1,5 @@
 "use strict";
+const ipc = require('electron').ipcRenderer;
 
 document.addEventListener( "DOMContentLoaded", function() {
     let version = process.version;
@@ -8,5 +9,8 @@ document.addEventListener( "DOMContentLoaded", function() {
     let btn = document.getElementById( "clickme" );
     btn.addEventListener( "click", function( e ) {
         console.log( "I was clicked." );
+        ipc.send('show-dialog', {
+            message: "The button was clicked"
+        })
     } );
 } );
